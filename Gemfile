@@ -1,11 +1,11 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-group :development do
-  gem 'rake', '~> 10.4.2'
-  gem 'compass', '~> 1.0.3'
-  gem 'sass', '~> 3.4.10'
-  gem 'jekyll', '~> 2.5.3'
-  gem 'jekyll-assets'
+gem 'jekyll', '3.3.1'
+
+group :jekyll_plugins do
+	gem 'jekyll-feed', '0.8.0'
+	gem 'jekyll-seo-tag', '2.1.0'
+	gem 'jekyll-paginate', '1.1.0'
+	gem 'jekyll-sitemap', '0.12.0'
+    gem 'jekyll-archives'
 end
